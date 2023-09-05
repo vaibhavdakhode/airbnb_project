@@ -1,0 +1,33 @@
+This repository contains Selenium test scenarios using the TestNG framework for two scenarios on the eBay website. These scenarios cover accessing a product via category after applying multiple filters and accessing a product via search.
+
+Scenario 1: Access a Product via Category after Applying Multiple Filters
+Steps:
+Go to www.ebay.com.
+Navigate to Search by category > Electronics > Cell Phones & accessories.
+After the page loads, click Cell Phones & Smartphones in the left-hand side navigation section.
+Click "See All" (appears under "Shop by brand" or "Shop by Network").
+Add 3 filters - screen size, Price, and Item location appearing in the pop-up and click apply.
+Verify that the filter tags are applied.
+Scenario 2: Access a Product via Search
+Steps:
+Go to www.ebay.com.
+Type any search string in the search bar. For example: MacBook.
+Change the Search category to Computers/Tablets & Networking and click Search.
+Verify that the page loads completely.
+Verify that the first result name matches with the search string.
+Prerequisites
+To execute the test scenarios, make sure you have the following prerequisites installed:
+
+Java Development Kit (JDK)
+Selenium WebDriver
+TestNG framework
+ChromeDriver browser
+Running the Test Scenarios
+Clone this repository to your local machine or download the source code.
+Open the project in your preferred IDE.
+Update the path to the WebDriver executable in the test scripts (System.setProperty("webdriver.chrome.driver", "chromedriver.exe");).
+Run the test scenarios using the TestNG runner in your IDE or using the command line.
+Test Results
+After executing the test scenarios, the test results will be displayed in the TestNG output, indicating whether the tests passed or failed.
+
+You can also generate HTML or XML reports using TestNG to have a detailed view of the test execution and results.
